@@ -1,5 +1,13 @@
 function Square({ marker }) {
-  return <button className="square">{marker}</button>;
+  function handleClick() {
+    console.log("click");
+  }
+
+  return (
+    <button className="square" onClick={handleClick}>
+      {marker}
+    </button>
+  );
 }
 
 export default Square;
