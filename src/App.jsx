@@ -4,19 +4,19 @@ export default function GameBoard() {
   return (
     <>
       <div className="board-row">
-        <Square marker="1" />
-        <Square marker="2" />
-        <Square marker="3" />
+        <Square />
+        <Square />
+        <Square />
       </div>
       <div className="board-row">
-        <Square marker="4" />
-        <Square marker="5" />
-        <Square marker="6" />
+        <Square />
+        <Square />
+        <Square />
       </div>
       <div className="board-row">
-        <Square marker="7" />
-        <Square marker="8" />
-        <Square marker="9" />
+        <Square />
+        <Square />
+        <Square />
       </div>
     </>
   );
