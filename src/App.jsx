@@ -2,12 +2,15 @@ import React from "react";
 import Square from "./components/Square";
 
 export default function GameBoard() {
+  const [xIsNext, setXIsNext] = React.useState(true);
   const [squares, setSquares] = React.useState(Array(9).fill(null));
 
   function handleSquareClick(i) {
     const nextSquares = [...squares]; // Create a shallow copy of the squares array
-    nextSquares[i] = "X"; // Update the new array
+    const marker = xIsNext ? "X" : "O";
+    nextSquares[i] = marker; // Update the new array
     setSquares(nextSquares); // Set the new array as the state
+    setXIsNext(!xIsNext);
   }
 
   return (
