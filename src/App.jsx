@@ -5,9 +5,9 @@ export default function GameBoard() {
   const [squares, setSquares] = React.useState(Array(9).fill(null));
 
   function handleSquareClick(i) {
-    const nextSquares = [...squares];
-    nextSquares[i] = "X";
-    setSquares(nextSquares);
+    const nextSquares = [...squares]; // Create a shallow copy of the squares array
+    nextSquares[i] = "X"; // Update the new array
+    setSquares(nextSquares); // Set the new array as the state
   }
 
   return (
