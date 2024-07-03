@@ -1,10 +1,8 @@
 import React from "react";
 
-function Square() {
-  const [marker, setMarker] = useState(null);
-
+function Square({ marker }) {
   function handleClick() {
-    console.log("click");
+    // setMarker("X");
   }
 
   return (
