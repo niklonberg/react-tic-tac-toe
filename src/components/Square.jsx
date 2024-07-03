@@ -1,12 +1,8 @@
 import React from "react";
 
-function Square({ marker }) {
-  function handleClick() {
-    // setMarker("X");
-  }
-
+function Square({ marker, onSquareClick }) {
   return (
-    <button className="square" onClick={handleClick}>
+    <button className="square" onClick={onSquareClick}>
       {marker}
     </button>
   );
